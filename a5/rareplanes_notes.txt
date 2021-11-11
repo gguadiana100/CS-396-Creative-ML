@@ -1,0 +1,35 @@
+RarePlanes Notes
+
+RarePlanes uses both real and synthetic satellite imagery from an overhead perspective. 
+Works to aid computer vision algorithms in detecting aircraft and aircraft attributes in satellite imagery. 
+Testing to see the value of synthetic data for training computer vision models.
+14,700 hand-annotated aircraft - real data from 253 Maxar WorldView-3 satellite scenes
+~630,000 automated annotated aircraft - synthetic data from 50,000 AI.Reverie satellite images
+10 features of aircraft are annotated
+Experiments to evaluate synthetic trained models vs real trained models
+
+Real datasets are expensive to annotate for computer vision tasks.
+Overhead imagery has challenges of detecting small heterogeneous objects, varying angles and lighting, different geographies with seasonal variability.
+Synthetic datasets must mimic complexities to be valuable.
+RarePlanes provides labels for 10 aircraft attributes and 33 sub-attribute choices 
+Simple annotation style with diamond style labeling in successive order for hand annotation
+Codebase allows users to create custom classes based on groupings of attributes
+Real data has high variability in illumination, shadowing, and lighting conditions based on stratification random sampling. 
+Synthetic data is made by taking simulations of real-world locations in which geospatial vector data from OpenStreetMap is used to procedurally generate building and airport terminal models. Airport ground paths are generated with planar shape and texture projections. Simulated locations are then put in unreal engine 4. Environmental factors and biomes are simulated. Imagery is split between 5 biomes as well as 4 weather conditions and other parameters. The resulting synthetic data is pretty diverse.
+
+Experiments to test the synthetic data with two tasks: object detection and instance segmentation. Tests are with synthetic data, real data, and synthetic-real data (90-10). Experiments on aircraft detection and civil role.
+
+Real data scene split into 512x512 tiles with at least one aircraft. Samples for real data made sure that there was one scene from each country. 10% random sample from real data used for testing.
+
+Experiments used Detectron2 framwork. Networks trained until convergence. Around ~60k iterations to converge. Random cropping of 512x512 was used for synthetic dataset training.
+
+Results are relative to the real dataset. Comparable results were seen for the model trained with 10% real data and 90% synthetic data.
+
+
+
+
+
+
+
+
+
