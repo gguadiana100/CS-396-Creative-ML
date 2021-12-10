@@ -1,0 +1,83 @@
+{
+  "spiritualObject": [
+    "God",
+    "Allah",
+    "the divine",
+    "good incarnate",
+    "evil incarnate",
+    "the devil",
+    "hell",
+    "heaven",
+    "sin",
+    "blessings",
+    "curses"
+  ],
+
+  "religion": [
+    "Judaism",
+    "Christianity",
+    "Islam",
+    "Buddhism",
+    "Mormonism"
+    ],
+
+  "portion": [
+    "piece",
+    "fragment",
+    "hint",
+    "bit",
+    "speck",
+    "chip",
+    "flake"
+    ],
+
+  "theme": [
+    "good and evil",
+    "sacrifice",
+    "redemption",
+    "personal growth",
+    "challenging oneself",
+    "the burden of performance",
+    "transcending yourself"
+    ],
+
+  "description": [
+    "bloody crazy",
+    "unbelievable",
+    "almost senseless",
+    "outrageous"
+    ],
+
+  "place": [
+    "Alberta",
+    "Canada",
+    "Harvard",
+    "Boston",
+    "Europe"],
+
+  "stage": [
+    "sexual conquest",
+    "college",
+    "political controversy",
+    "Jungean",
+    "Freud",
+    "Nietzchean",
+    "drug rehab",
+    "hospital",
+    "teaching"
+    ],
+
+  "life": [
+    "existence",
+    "life",
+    "time here on Earth",
+    "conscious experience"
+    ],
+
+  "story": [
+    "In the #religion# tradition, we find #portion.s# of #spiritualObject# in the stories about #theme#. It's #description# how it reminds me of my time in #place# when I was in the #stage# #portion# of my #life#."
+  ],
+  "origin": [
+    "#story#"
+  ]
+}
